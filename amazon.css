@@ -1,0 +1,243 @@
+.back{
+    display: flex;
+    flex-direction: row;
+    
+}
+.back-left{
+    height: 550px;
+    width: 55%;
+    background-color:rgb(4, 83, 46);
+    position: relative;
+    margin-top: 85px;
+    left: 0px;
+    margin-left: 2px;
+    position: relative;
+
+}
+.back-left-inner p{
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+    
+}
+
+.back-left-inner
+{
+margin-top: 140px;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+margin-left: 100px;
+}
+.back-left-inner-right{
+    
+    position: absolute;
+    margin-left: 80px;
+    height: 600px;
+    top: 0px;
+    right: 0;
+    left: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.sign{
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.back-left-inner-purple1{
+    /* background-color:  rgb(212, 52, 79); */
+    position: absolute;
+    left: 0px;
+    height: 200px;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-right: 139px solid rgb(212, 52, 79);;
+    
+    
+}
+.back-left-inner-purple2{
+    
+    position: absolute;
+    left: -70px;
+    height: 350px;
+    margin-top: 250px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 300px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 209px solid  rgb(212, 52, 79);   
+}
+.back-right{
+    background-color:white;
+    width: 45%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+}
+.food-div{
+    position: absolute;
+    z-index: 20;
+}
+.food-img
+{   margin-top: 180px;
+    width: 90%;
+    margin-left:3%;
+    height: 250px;
+    object-fit: contain;
+    
+
+}
+.food-div2{
+    position: absolute;
+    margin-top: 320px;
+    width: 60%;
+    margin-left:10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.food-img2{ 
+    margin-top: 106px;
+    height: 200px;
+    width: 270px;
+    object-fit: cover;
+    margin-right: -15px;
+    z-index: 20;
+    
+}
+
+.food-img3{ 
+    margin-top: -65px;
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+   
+    margin-right: 5px;
+
+}
+
+.food-img4{ 
+    margin-top:-200px;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    margin-right: 0px;
+    margin-right: 5px;
+    background-color: black;
+    margin-left: -300px;
+    z-index: 30;
+
+}
+
+.food-img5{ 
+    margin-top:-200px;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    margin-right: 0px;
+    margin-right: 5px;
+    background-color: black;
+    margin-left: 0px;
+
+}
+.mens-all-internal{
+    display: flex;
+    flex-direction: column;
+    max-width: 170px;
+    min-height: 250px;
+    
+}
+
+.mens-all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.price-and-shop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 3px;
+}
+.shop-now{
+    cursor: pointer;
+    border-width: 0px;
+    border-style: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    margin-top: 10px;
+}
+.name-div-para{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.mens-heading{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 0px;
+    margin-left: 2px;
+    padding-left: 15px;
+}
+.one
+{
+    margin-bottom: 20px;
+}
+@media(max-width:600px)
+{
+    .mens-all{
+      
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(width>600px)
+{
+    .mens-all{
+       
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(width>800px)
+{
+    .mens-all{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+@media(width>1000px)
+{
+    .mens-all{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    }
+}

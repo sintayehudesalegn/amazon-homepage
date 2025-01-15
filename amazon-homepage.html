@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="amazon.css">
+</head>
+<body>
+    <style>
+        .body{
+            margin-bottom: 0px;
+        }
+        .nav-bar{
+            left: 10px;
+            right: 8px;
+            top: 0;
+            height: 60px;
+            background-color:rgb(0, 0, 0);
+            display: flex;
+            flex-direction: row;
+            margin-left: 0px;
+            position: fixed;
+            z-index:100 ;
+            
+        }
+        .amazon-logo-div{
+            width: 100px;
+            height: 70px;
+            margin-top: 15px;
+            
+        }
+        .amazon-logo-img{
+            width: 100px;
+            cursor: pointer;
+            
+        }
+        .deliver-to-div{
+            width: 90px;
+            height: 70px;
+            margin-left: 2px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .deliver-to{
+            
+            color: white;
+           width: 100px;
+        }
+        .ethiopia-div{
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: white;
+            width: 100px;
+        }
+        .location-div{
+            width: 15px;
+            height: 15px;
+            margin-left: 10px;
+            margin-right: 0px;
+            margin-top: 20px;
+            
+           
+        }
+      
+        .location-img{
+            width: 100%;
+            border-radius: 15px;
+
+        }
+        .all-button-div{
+            height: 70px;
+            width: 30px;
+            margin-right: 0px;
+        }
+        .all-button{
+            margin-top: 10px;
+            width: 100%;
+            height: 60%;
+            border-style: none;
+            border-bottom-left-radius: 3px;
+            border-top-left-radius: 3px;
+            cursor: pointer;
+            background-color: rgb(185, 178, 178);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .search-bar-div{
+            margin-top: 10px;
+            display: flex;
+            flex: 1;
+           height: 66%;
+            
+        }
+        .all-search{
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            margin-right: 10px;
+            border-style: none;
+        }
+        .search-bar{
+            /* margin-left: -1; */
+            border-style: none;
+            height:100%;
+            flex: 1;
+             border-width: 0px;
+             padding-left: 20px;
+             font-family: Arial, Helvetica, sans-serif;
+             
+        }
+        .search-bar::placeholder{
+            font-family: Arial, Helvetica, sans-serif;
+            
+             
+        }
+        .search-icon-div{
+            width: 40px;
+            height: 70%;
+            margin-top: 10px;
+            border-style: none;
+            display: flex;
+            cursor: pointer;
+
+        }
+        .search-icon-img{
+            width: 100%;
+            border-bottom-right-radius: 2px;
+            border-top-right-radius: 2px;
+        }
+        .engflag-div-outer{
+            display: flex;
+            flex-direction: row;   
+            margin-top: 37px;
+            flex-shrink: 0;
+        }
+        .engflag-div{
+            width: 20px;
+            height: 10px;
+            cursor: pointer;
+        }
+        .engflag-img{
+            width: 100%;
+        }
+        .en-bt{
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            border-style: none;
+            cursor: pointer;
+           
+        }
+        .hell-outer{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-left: 10px;
+            flex-shrink: 0;
+            
+        }
+        .hello{
+            color: white;
+            margin-bottom: 4px;
+            width: 120px;
+            cursor: pointer;
+        }
+        .accounts{
+            color: white;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 140px;
+            cursor: pointer;
+        }
+        .return-outer{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            margin-left: 10px;
+            flex-shrink: 0;
+            width: 80px;
+            
+        }
+        .return{
+           color: white;
+           margin-bottom: 4px;
+           width: 120px;
+           cursor: pointer;
+        }
+        .orders{
+            
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bolder;
+            width: 100px;
+            cursor: pointer;
+        }
+        .amacart-div{
+          width: 70px;
+          height: 50px;
+          margin-top: 15px;
+          margin-left: 10px;
+          flex-shrink: 0;
+          position: relative;
+        }
+        .amacart-img{
+            width: 100%;
+            cursor: pointer;
+        }
+        .mini-nav{
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(60, 60, 105);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+            position: fixed;
+            left: 10px;
+            right: 8px;
+            height: 35px;
+            align-items: center;
+            z-index: 90;
+
+        }
+        body{
+            margin-bottom: 1000px;
+        }
+        .menu{
+           margin-left: 20px;
+           cursor: pointer;
+        }
+        .all{
+            cursor: pointer;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        .all img{
+            width: 15px;
+            height: 15px;
+            margin-right: 3px;
+        }
+        .cart-no{
+            position: absolute;
+            color: rgb(255, 99, 42);
+            margin-top: -50px;
+            margin-left: 33px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+    </style>
+    <div class="nav-bar">
+        <div class="amazon-logo-div">
+            <img class="amazon-logo-img" src="img/amalogo1.png" alt="">
+        </div>
+        <div class="location-div"><img class="location-img" src="img/location2.png" alt=""></div>
+        <div class="deliver-to-div">
+            <div class="deliver-to">Deliver to</div>
+            <div class="ethiopia-div">Ethiopia</div>
+        </div>
+        <div class="all-search">
+            <div class="all-button-div">
+                <button class="all-button">All</button>
+            </div>
+            <div class="search-bar-div">
+                <input class="search-bar" type="text" placeholder="Search Amazon">
+            </div>
+            <div class="search-icon-div">
+                <img class="search-icon-img" src="img/search-icon.png" alt="">
+            </div>
+        </div>
+        <div class="engflag-div-outer">
+            <div class="engflag-div"><img class="engflag-img" src="img/engflag.jpg" alt=""></div>
+            <div class="en-div"><button class="en-bt">EN</button></div>
+        </div>
+        <div class="hell-outer">
+            <div class="hello">Hello, sign in</div>
+            <div class="accounts">Accounts & Lists</div>
+        </div>
+        <div class="return-outer">
+            <div class="return">Returns</div>
+            <div class="orders">&Orders</div>
+        </div>
+        <div class="amacart-div">
+            <img class="amacart-img" src="img/amacart.jpg" alt="">
+            <div class="cart-no"></div>
+        </div>
+    </div>
+    <div class="mini-nav">
+        <div class="all">
+            <div><img src="img/three3.png" alt=""></div>
+            <div>All</div>
+        </div>
+        <div class="menu">Today's Deals</div>
+        <div class="menu">Regstry</div>
+        <div class="menu">Customer Service</div>
+        <div class="menu">Gift Cards</div>
+        <div class="menu">Sell</div>
+    </div>
+    <div class="body-div">
+        <div class="back">
+            <div class="back-left">
+                <div class="divo">
+                    <div class="sign">&lt;</div>
+                    <div class="back-left-inner">
+                        <p>Shop holiday</p>
+                        <p>gift guides</p>
+                </div>
+                </div>
+                <div class="back-left-inner-right">
+                    <div class="back-left-inner-purple1"></div>
+                    <div class="back-left-inner-purple2"></div>
+                </div>
+                <div class="back-right"></div>
+            </div>
+            <div class="back-right">
+                <div class="food-div">
+                    <img class="food-img" src="img/food2.jpg" alt="">
+                </div>
+                <div class="food-div2">
+                    <img class="food-img2" src="img/menscloth3.jpg" alt="">
+                    <img class="food-img2" src="img/pc2.jpg" alt="">
+                    <img class="food-img3" src="img/book5.jpg" alt="">
+                    <img class="food-img4" src="img/mic.jpg" alt="">
+                    <img class="food-img5" src="img/camera.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="one"><p class="mens-heading">Mens' Fashion Cloths</p>
+        <div class="mens-all">
+            
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Mens cotton shirt</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/menscloth1.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$11</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a> 
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Mens cotton shirt</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/menscloth2.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$11</p>
+                    <a href="#" class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Mens Jeans Pants</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/menscloth3.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$9</p>
+                    <a  href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="one"><p class="mens-heading">Teenage ladies Fashion Cloths</p>
+        <div class="mens-all">
+            
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Girls' cloths</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/womenscloth1.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$7</p>
+                    <a  href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Girls' cloths</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/womenscloth2.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$6</p>
+                    <a  href="#" class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Girls' cloths</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/womenscloth3.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$8</p>
+                    <a  href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">T-shirt</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/womenscloth4.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$4</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="one"><p class="mens-heading">Laptop Computers</p>
+        <div class="mens-all">
+            
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">HP cori-7 256ssd</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/pc2.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$180</p>
+                    <a href="#" class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">HP Dualcore 1TB</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/pc1.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$221</p>
+                    <a href="#" class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Asus computer</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/pc4.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$156</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Toshiba satelite</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/pc3.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$168</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">HP cori-7</p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/pc5.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$210</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="one"><p class="mens-heading">Amazon Books</p>
+        <div class="mens-all">
+            
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Atomic Habits <span style="font-size: 12px;">James clear</span></p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/book5.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$3</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Big heart little stove <span style="font-size: 12px;">Erin French</span></p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/book1.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$2.2</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Power<span style="font-size: 12px;">Roberto Fermino</span></p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/book2.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$2.1</p>
+                    <a href="#" class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Turkey Trouble<span style="font-size: 12px;">Log Harper</span></p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/book3.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$1.3</p>
+                    <a href="#" class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+            <div class="mens-all-internal">
+                <div><p class="name-div-para">Leaf Thief <span style="font-size: 12px;">Nigola Slater</span></p></div>
+                <div class="mens-div-body"><img class="mens-img" src="img/book4.jpg" alt=""></div>
+                <div class="price-and-shop">
+                    <p class="price">$210</p>
+                    <a href="#"  class="shop-now"><button class="shop-now">shop now</button></a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
