@@ -1,9 +1,3 @@
-"# amazon-homepage" 
-"# amazon-homepage" 
-"# amazon-homepage" 
-"# amazon-homepage" 
-"# amazon-homepage" 
-"# amazon-homepage" 
-"# amazon-homepage" 
-"# amazon-homepage" 
-"# amazon-homepage" 
+# amazon-homepage
+
+This is a replica of the Amazon website homepage.
